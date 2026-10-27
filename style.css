@@ -171,3 +171,4 @@ footer b { color: #fff; }
   .half .in { padding: 26px 22px; }
 }
 .perks.neutral .ico { background: var(--text); }
+.intro p.tagline { margin-top: 4px; font-size: clamp(18px, 2vw, 22px); font-weight: 700; color: var(--text); }
