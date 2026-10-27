@@ -175,7 +175,7 @@ footer .cols { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; pad
 footer .mono { color: rgba(255, 255, 255, .4); display: block; margin-bottom: 14px; }
 footer b { color: #fff; font-weight: 600; }
 footer a:hover { color: #fff; }
-footer .word { font-size: clamp(110px, 24vw, 340px); font-weight: 800; letter-spacing: -.07em; line-height: .8; color: #fff; margin-top: 48px; padding-bottom: .16em; white-space: nowrap; }
+footer .word { font-size: clamp(56px, 8vw, 114px); font-weight: 800; letter-spacing: -.06em; line-height: .8; color: #fff; margin-top: 36px; padding-bottom: .16em; white-space: nowrap; }
 footer .word i { display: inline-block; width: .17em; height: .17em; background: var(--metal); margin-left: .06em; }
 footer .word i + i { background: var(--parts); margin-left: .04em; }
 footer .legal { display: flex; justify-content: space-between; gap: 20px; padding-top: 18px; padding-bottom: 18px; border-top: 1px solid var(--line-dark); color: rgba(255, 255, 255, .4); }
