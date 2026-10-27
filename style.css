@@ -286,3 +286,11 @@ header.site .tagline { font-size: 13px; line-height: 1.3; color: var(--ink-2); m
   .pagehead p { font-size: 16px; }
   footer { padding-top: 48px; }
 }
+
+/* телефоны: цвет у фото в середине экрана (класс live ставит скрипт) */
+@media (hover: none) {
+  .tile .pic, .half .img { transition: filter .6s; }
+  .tile.live .pic { filter: grayscale(0); }
+  .half.live .img { filter: grayscale(0) contrast(1.02) brightness(.85); }
+  .tile.live .body::before { width: 100%; }
+}

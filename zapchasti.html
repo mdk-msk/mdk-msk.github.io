@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=fc047d6c">
+<link rel="stylesheet" href="style.css?v=85838760">
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -68,6 +68,14 @@
     es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
   }, { rootMargin: "0px 0px -8% 0px" });
   els.forEach(function (e) { io.observe(e); });
+})();
+// телефоны: фото цветное, пока проезжает через середину экрана (на компьютере — по наведению)
+(function () {
+  if (!window.matchMedia("(hover: none)").matches || !("IntersectionObserver" in window)) return;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { e.target.classList.toggle("live", e.isIntersecting); });
+  }, { rootMargin: "-35% 0px -35% 0px" });
+  document.querySelectorAll(".tile, .half").forEach(function (e) { io.observe(e); });
 })();
 </script>
 </body>
