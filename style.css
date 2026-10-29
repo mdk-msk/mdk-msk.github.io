@@ -84,6 +84,7 @@ nav.main a.metal::before, nav.main a.parts::before { content: ""; display: inlin
 .cell b { display: block; font-size: 20px; font-weight: 700; letter-spacing: -.02em; margin: 26px 0 6px; line-height: 1.2; }
 .cell span { color: var(--muted); font-size: 15px; }
 .cell a b:hover { color: var(--metal); }
+.cell.duo a + a b { margin-top: 0; }
 .perks { padding: 0; }
 .perks.metal .cell .mono b, .perks.parts .cell .mono b { color: var(--c); }
 
